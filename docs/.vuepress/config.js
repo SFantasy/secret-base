@@ -1,3 +1,3 @@
 module.exports = {
-  config: '/secret-base/',
+  base: '/secret-base/',
 }
