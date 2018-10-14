@@ -7,7 +7,7 @@
   },
   "husky": {
     "hooks": {
-      "post-push": "yarn build"
+      "post-update": "./deploy.sh"
     }
   },
   "devDependencies": {
