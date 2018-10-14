@@ -5,7 +5,13 @@
     "start": "vuepress dev docs",
     "build": "vuepress build docs"
   },
+  "husky": {
+    "hooks": {
+      "post-push": "yarn build"
+    }
+  },
   "devDependencies": {
+    "husky": "^1.1.2",
     "vuepress": "^0.14.4"
   }
 }

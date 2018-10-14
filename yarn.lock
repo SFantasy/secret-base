@@ -1756,7 +1756,7 @@ cosmiconfig@^4.0.0:
     parse-json "^4.0.0"
     require-from-string "^2.0.1"
 
-cosmiconfig@^5.0.2:
+cosmiconfig@^5.0.2, cosmiconfig@^5.0.6:
   version "5.0.6"
   resolved "http://registry.npm.taobao.org/cosmiconfig/download/cosmiconfig-5.0.6.tgz#dca6cf680a0bd03589aff684700858c81abeeb39"
   dependencies:
@@ -2340,6 +2340,18 @@ execa@^0.8.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+execa@^0.9.0:
+  version "0.9.0"
+  resolved "http://registry.npm.taobao.org/execa/download/execa-0.9.0.tgz#adb7ce62cf985071f60580deb4a88b9e34712d01"
+  dependencies:
+    cross-spawn "^5.0.1"
+    get-stream "^3.0.0"
+    is-stream "^1.1.0"
+    npm-run-path "^2.0.0"
+    p-finally "^1.0.0"
+    signal-exit "^3.0.0"
+    strip-eof "^1.0.0"
+
 expand-brackets@^0.1.4:
   version "0.1.5"
   resolved "http://registry.npm.taobao.org/expand-brackets/download/expand-brackets-0.1.5.tgz#df07284e342a807cd733ac5af72411e581d1177b"
@@ -2469,6 +2481,12 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
+find-up@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/find-up/download/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
+  dependencies:
+    locate-path "^3.0.0"
+
 flatten@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/flatten/download/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -2577,6 +2595,10 @@ get-own-enumerable-property-symbols@^2.0.1:
 get-port@^3.2.0:
   version "3.2.0"
   resolved "http://registry.npm.taobao.org/get-port/download/get-port-3.2.0.tgz#dd7ce7de187c06c8bf353796ac71e099f0980ebc"
+
+get-stdin@^6.0.0:
+  version "6.0.0"
+  resolved "http://registry.npm.taobao.org/get-stdin/download/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -2866,6 +2888,21 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/https-browserify/download/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
 
+husky@^1.1.2:
+  version "1.1.2"
+  resolved "http://registry.npm.taobao.org/husky/download/husky-1.1.2.tgz#574c2bb16958db8a8120b63306efaff110525c23"
+  dependencies:
+    cosmiconfig "^5.0.6"
+    execa "^0.9.0"
+    find-up "^3.0.0"
+    get-stdin "^6.0.0"
+    is-ci "^1.2.1"
+    pkg-dir "^3.0.0"
+    please-upgrade-node "^3.1.1"
+    read-pkg "^4.0.1"
+    run-node "^1.0.0"
+    slash "^2.0.0"
+
 iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -3008,7 +3045,7 @@ is-callable@^1.1.3, is-callable@^1.1.4:
   version "1.1.4"
   resolved "http://registry.npm.taobao.org/is-callable/download/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
 
-is-ci@^1.0.10, is-ci@^1.1.0:
+is-ci@^1.0.10, is-ci@^1.1.0, is-ci@^1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/is-ci/download/is-ci-1.2.1.tgz#e3779c8ee17fccf428488f6e281187f2e632841c"
   dependencies:
@@ -3486,6 +3523,13 @@ locate-path@^2.0.0:
   resolved "http://registry.npm.taobao.org/locate-path/download/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
   dependencies:
     p-locate "^2.0.0"
+    path-exists "^3.0.0"
+
+locate-path@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/locate-path/download/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
+  dependencies:
+    p-locate "^3.0.0"
     path-exists "^3.0.0"
 
 lodash._reinterpolate@~3.0.0:
@@ -4187,15 +4231,31 @@ p-limit@^1.0.0, p-limit@^1.1.0:
   dependencies:
     p-try "^1.0.0"
 
+p-limit@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/p-limit/download/p-limit-2.0.0.tgz#e624ed54ee8c460a778b3c9f3670496ff8a57aec"
+  dependencies:
+    p-try "^2.0.0"
+
 p-locate@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/p-locate/download/p-locate-2.0.0.tgz#20a0103b222a70c8fd39cc2e580680f3dde5ec43"
   dependencies:
     p-limit "^1.1.0"
 
+p-locate@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/p-locate/download/p-locate-3.0.0.tgz#322d69a05c0264b25997d9f40cd8a891ab0064a4"
+  dependencies:
+    p-limit "^2.0.0"
+
 p-try@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/p-try/download/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
+
+p-try@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/p-try/download/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
 
 package-json@^4.0.0:
   version "4.0.1"
@@ -4311,6 +4371,18 @@ pkg-dir@^2.0.0:
   resolved "http://registry.npm.taobao.org/pkg-dir/download/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+pkg-dir@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/pkg-dir/download/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
+  dependencies:
+    find-up "^3.0.0"
+
+please-upgrade-node@^3.1.1:
+  version "3.1.1"
+  resolved "http://registry.npm.taobao.org/please-upgrade-node/download/please-upgrade-node-3.1.1.tgz#ed320051dfcc5024fae696712c8288993595e8ac"
+  dependencies:
+    semver-compare "^1.0.0"
 
 portfinder@^1.0.13:
   version "1.0.17"
@@ -4764,6 +4836,14 @@ read-pkg@^3.0.0:
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
 
+read-pkg@^4.0.1:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/read-pkg/download/read-pkg-4.0.1.tgz#963625378f3e1c4d48c85872b5a6ec7d5d093237"
+  dependencies:
+    normalize-package-data "^2.3.2"
+    parse-json "^4.0.0"
+    pify "^3.0.0"
+
 "readable-stream@1 || 2", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.4, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.6:
   version "2.3.6"
   resolved "http://registry.npm.taobao.org/readable-stream/download/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
@@ -4994,6 +5074,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+run-node@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/run-node/download/run-node-1.0.0.tgz#46b50b946a2aa2d4947ae1d886e9856fd9cabe5e"
+
 run-queue@^1.0.0, run-queue@^1.0.3:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/run-queue/download/run-queue-1.0.3.tgz#e848396f057d223f24386924618e25694161ec47"
@@ -5047,6 +5131,10 @@ section-matter@^1.0.0:
 select@^1.1.2:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/select/download/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+
+semver-compare@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/semver-compare/download/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
 
 semver-diff@^2.0.0:
   version "2.1.0"
@@ -5116,6 +5204,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 slash@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/slash/download/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+slash@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/slash/download/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
 slice-ansi@1.0.0:
   version "1.0.0"
